@@ -27,4 +27,8 @@ public interface SupplierService {
         return null;
     }
 
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> fe217c374984a0896e7a983eb4d68aacf6963d68

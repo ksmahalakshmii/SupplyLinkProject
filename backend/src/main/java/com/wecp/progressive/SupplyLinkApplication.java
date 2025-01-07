@@ -9,4 +9,8 @@ public class SupplyLinkApplication {
         System.out.println("Welcome to SupplyLink Project!");
         SpringApplication.run(SupplyLinkApplication.class, args);
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> fe217c374984a0896e7a983eb4d68aacf6963d68

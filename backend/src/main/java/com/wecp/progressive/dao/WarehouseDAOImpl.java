@@ -22,8 +22,12 @@ public class WarehouseDAOImpl implements WarehouseDAO {
             connection = DatabaseConnectionManager.getConnection();
             String sql = "INSERT INTO warehouse (supplier_id, warehouse_name, location, capacity) VALUES (?, ?, ?, ?)";
             statement = connection.prepareStatement(sql, PreparedStatement.RETURN_GENERATED_KEYS);
+<<<<<<< HEAD
 
             statement.setInt(1, warehouse.getSupplier().getSupplierId());
+=======
+            statement.setInt(1, warehouse.getSupplierId());
+>>>>>>> fe217c374984a0896e7a983eb4d68aacf6963d68
             statement.setString(2, warehouse.getWarehouseName());
             statement.setString(3, warehouse.getLocation());
             statement.setDouble(4, warehouse.getCapacity());
@@ -86,7 +90,11 @@ public class WarehouseDAOImpl implements WarehouseDAO {
             connection = DatabaseConnectionManager.getConnection();
             String sql = "UPDATE warehouse SET supplier_id =?, warehouse_name =?, location =?, capacity =? WHERE warehouse_id = ?";
             statement = connection.prepareStatement(sql);
+<<<<<<< HEAD
             statement.setInt(1, warehouse.getSupplier().getSupplierId());
+=======
+            statement.setInt(1, warehouse.getSupplierId());
+>>>>>>> fe217c374984a0896e7a983eb4d68aacf6963d68
             statement.setString(2, warehouse.getWarehouseName());
             statement.setString(3, warehouse.getLocation());
             statement.setInt(4, warehouse.getCapacity());
@@ -155,4 +163,8 @@ public class WarehouseDAOImpl implements WarehouseDAO {
 
         return warehouses;
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> fe217c374984a0896e7a983eb4d68aacf6963d68

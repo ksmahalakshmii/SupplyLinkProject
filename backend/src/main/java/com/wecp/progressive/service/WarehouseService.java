@@ -27,7 +27,14 @@ public interface WarehouseService {
     }
 
     //Do not implement these methods in WarehouseServiceImplArraylist.java and WarehouseServiceImplJdbc.java class
+<<<<<<< HEAD
     default List<Warehouse> getWarehouseBySupplier(int supplierId) throws SQLException {
         return null;
     }
 }
+=======
+    default List<Warehouse> getWarehouseBySupplier(int supplierId) {
+        return null;
+    }
+}
+>>>>>>> fe217c374984a0896e7a983eb4d68aacf6963d68

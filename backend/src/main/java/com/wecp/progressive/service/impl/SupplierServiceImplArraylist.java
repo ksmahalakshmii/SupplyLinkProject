@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> fe217c374984a0896e7a983eb4d68aacf6963d68
 package com.wecp.progressive.service.impl;
 
 import com.wecp.progressive.entity.Supplier;

@@ -22,7 +22,11 @@ public class ProductDAOImpl implements ProductDAO {
             connection = DatabaseConnectionManager.getConnection();
             String sql = "INSERT INTO product (warehouse_id, product_name, product_description, quantity, price) VALUES (?, ?, ?, ?, ?)";
             statement = connection.prepareStatement(sql, PreparedStatement.RETURN_GENERATED_KEYS);
+<<<<<<< HEAD
             statement.setDouble(1, product.getWarehouse().getWarehouseId());
+=======
+            statement.setDouble(1, product.getWarehouseId());
+>>>>>>> fe217c374984a0896e7a983eb4d68aacf6963d68
             statement.setString(2, product.getProductName());
             statement.setString(3, product.getProductDescription());
             statement.setInt(4, product.getQuantity());
@@ -87,7 +91,11 @@ public class ProductDAOImpl implements ProductDAO {
             connection = DatabaseConnectionManager.getConnection();
             String sql = "UPDATE product SET warehouse_id = ?, product_name = ?, product_description = ?, quantity =?, price =? WHERE product_id = ?";
             statement = connection.prepareStatement(sql);
+<<<<<<< HEAD
             statement.setInt(1, product.getWarehouse().getWarehouseId());
+=======
+            statement.setInt(1, product.getWarehouseId());
+>>>>>>> fe217c374984a0896e7a983eb4d68aacf6963d68
             statement.setString(2, product.getProductName());
             statement.setString(3, product.getProductDescription());
             statement.setInt(4, product.getQuantity());
@@ -158,4 +166,8 @@ public class ProductDAOImpl implements ProductDAO {
 
         return products;
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> fe217c374984a0896e7a983eb4d68aacf6963d68

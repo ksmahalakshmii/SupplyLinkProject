@@ -1,7 +1,11 @@
 package com.wecp.progressive.service.impl;
 
 import com.wecp.progressive.dao.WarehouseDAO;
+<<<<<<< HEAD
 import com.wecp.progressive.entity.Supplier;
+=======
+
+>>>>>>> fe217c374984a0896e7a983eb4d68aacf6963d68
 import com.wecp.progressive.entity.Warehouse;
 import com.wecp.progressive.service.WarehouseService;
 

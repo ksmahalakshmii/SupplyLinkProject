@@ -1,5 +1,6 @@
 package com.wecp.progressive.service.impl;
 
+<<<<<<< HEAD
 import com.wecp.progressive.entity.Product;
 import com.wecp.progressive.repository.ProductRepository;
 import com.wecp.progressive.service.ProductService;
@@ -49,4 +50,8 @@ public class ProductServiceImplJpa  implements ProductService {
     public List<Product> getAllProductByWarehouse(int warehouseId) throws SQLException {
         return productRepository.findAllByWarehouse_WarehouseId(warehouseId);
     }
+=======
+public class ProductServiceImplJpa  {
+
+>>>>>>> fe217c374984a0896e7a983eb4d68aacf6963d68
 }

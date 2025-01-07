@@ -1,5 +1,6 @@
 package com.wecp.progressive.controller;
 
+<<<<<<< HEAD
 import com.wecp.progressive.entity.Product;
 import com.wecp.progressive.entity.Warehouse;
 import com.wecp.progressive.service.impl.WarehouseServiceImplJpa;
@@ -75,3 +76,39 @@ public class WarehouseController {
         return new ResponseEntity<>(warehouses, HttpStatus.OK);
     }
 }
+=======
+import com.wecp.progressive.entity.Warehouse;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
+
+@RestController
+public class WarehouseController {
+
+    public ResponseEntity<List<Warehouse>> getAllWarehouses() {
+        return null;
+    }
+
+    public ResponseEntity<Warehouse> getWarehouseById(int warehouseId) {
+        return null;
+    }
+
+    public ResponseEntity<Integer> addWarehouse(Warehouse warehouse) {
+        return null;
+    }
+
+    public ResponseEntity<Void> updateWarehouse(int warehouseId, Warehouse warehouse) {
+        return null;
+    }
+
+    public ResponseEntity<Void> deleteWarehouse(int warehouseId) {
+        return null;
+    }
+
+
+    public ResponseEntity<List<Warehouse>> getWarehousesBySupplier(int supplierId) {
+        return null;
+    }
+}
+>>>>>>> fe217c374984a0896e7a983eb4d68aacf6963d68

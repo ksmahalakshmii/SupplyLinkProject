@@ -11,4 +11,8 @@ public interface SupplierDAO {
     void updateSupplier(Supplier supplier) throws SQLException;
     void deleteSupplier(int supplierId) throws SQLException;
     List<Supplier> getAllSuppliers() throws SQLException;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> fe217c374984a0896e7a983eb4d68aacf6963d68
